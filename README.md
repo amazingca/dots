@@ -20,6 +20,7 @@ This repository hosts my configuration files for use with Hyprland.
  - [ ] nautilus *[Gnome terminal]*
  - [ ] zen *[Web browser]*
  - [ ] discord *[online communication platform]*
+ - [ ] revolt *[open-source communication platform]*
  - [ ] minecraft *[it's a sandbox game]*
  - [ ] hyprshot *[screenshot utility]*
 
