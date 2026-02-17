@@ -1,17 +1,14 @@
 ## Autumn's Dotfiles
 
-This repository hosts my configuration files for use with Hyprland.
-
-| With no applications open | With Zen open |
-|---|---|
-| ![](https://github.com/Amazingca/dots/blob/main/desktop_background.png?raw=true) | ![](https://github.com/Amazingca/dots/blob/main/desktop_with_application.png?raw=true) |
+This repository hosts my configuration files for use with Hyprland/COSMIC.
 
 ### Required Packages
 
- - [x] Hyprland
- - [x] Hyprpaper *[wallpaper utility]*
- - [x] Hyprlock *[for lock screen]*
- - [x] Waybar *[composable menu that provides additional information within the environment]*
+ - [ ] Hyprland
+   - [x] Hyprpaper *[wallpaper utility]*
+   - [x] Hyprlock *[for lock screen]*
+   - [x] Waybar *[composable menu that provides additional information within the environment]*
+ - [ ] COSMIC
 
 
 ### Optional Packages
@@ -20,7 +17,7 @@ This repository hosts my configuration files for use with Hyprland.
  - [ ] nautilus *[Gnome terminal]*
  - [ ] zen *[Web browser]*
  - [ ] discord *[online communication platform]*
- - [ ] revolt *[open-source communication platform]*
+ - [ ] stoat *[open-source communication platform]*
  - [ ] minecraft *[it's a sandbox game]*
  - [ ] hyprshot *[screenshot utility]*
 
@@ -29,7 +26,6 @@ This repository hosts my configuration files for use with Hyprland.
 Most of these configurations are mixed-and-matched from various other dotfiles. Here's a brief synopsis of where I adapted them:
 
 [end-4 -- illogical-impulse](https://github.com/end-4/dots-hyprland)
- - GTK themes
  - Hyprlock configurations
 
 [d00m1k -- SimpleBlueColorWaybar](https://github.com/d00m1k/SimpleBlueColorWaybar)
@@ -56,7 +52,7 @@ In addition, it is likely that there are some required packages that I missed, a
 
 ### Installation
 
-You should be able to install most of these files directly by copying them over to the `~/.config` folder. Assuming that all required packages are installed and optional packages have been adjusted where needed, it should run without issue.
+You should be able to install most of these files directly by copying them over to the `~/` folder. Assuming that all required packages are installed and optional packages have been adjusted where needed, it should run without issue.
 
 #### Disclaimer
 

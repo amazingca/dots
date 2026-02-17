@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Helium Browser
+StartupWMClass=Helium Browser
+Comment=A browser built on ungoogled-chromium
+GenericName=Helium Browser
+Exec=/usr/bin/helium
+Type=Application
+Categories=Network;WebBrowser;
+Path=/usr/bin
