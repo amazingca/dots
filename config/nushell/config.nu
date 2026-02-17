@@ -26,3 +26,5 @@ $env.config.show_banner = false
 $env.PROMPT_INDICATOR = "$ "
 
 $env.PROMPT_COMMAND = { $"[(pwd | path basename)@(sys host | get hostname)]" }
+
+$env.config.table.mode = "psql"
