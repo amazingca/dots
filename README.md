@@ -14,7 +14,7 @@ This repository hosts my configuration files for use with Hyprland/COSMIC.
 ### Optional Packages
 (These are used by default within `hyprland.conf` but are not necessary to the overall theme)
 
- - [ ] nautilus *[Gnome terminal]*
+ - [ ] nautilus *[GNOME file manager]*
  - [ ] helix *[terminal editor]*
  - [ ] zen *[Web browser]*
  - [ ] discord *[online communication platform]*
