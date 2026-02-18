@@ -16,6 +16,10 @@
 # You can also pretty-print and page through the documentation for configuration
 # options using:
 #     config nu --doc | nu-highlight | less -R
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=cosmic
+
+def gp [] { sudo gpclient --fix-openssl connect gateway.colostate.edu }
+def virt [] { sudo /usr/bin/modprobe v4l2loopback exclusive_caps=1 card_label=OBS Virtual Camera }
 
 $env.config.buffer_editor = "helix"
 
