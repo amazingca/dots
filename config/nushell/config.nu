@@ -20,10 +20,14 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
 def gp [] { sudo gpclient --fix-openssl connect gateway.colostate.edu }
 def virt [] { sudo /usr/bin/modprobe v4l2loopback exclusive_caps=1 card_label=OBS Virtual Camera }
+def c [] { cosmic-session }
 
 $env.config.buffer_editor = "helix"
+$env.EDITOR = "helix"
 
 $env.GPG_TTY = (tty)
+
+$env.LANG = "en_US.UTF-8"
 
 $env.config.show_banner = false
 
