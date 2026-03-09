@@ -1,0 +1,48 @@
+position = "top"
+height = 24
+
+[[start]]
+type = "menu"
+label = "" # "󰣇 btw"
+label_icon = "/opt/archlinux-icons/archlinux-icon-crystal-256.svg"
+label_icon_size = 24
+
+[[start]]
+type = "workspaces"
+favorites = ["1", "2", "3", "4", "5"]
+
+[[start]]
+type = "focused"
+truncate = { mode = "end", max_length = 50 }
+icon_size = 16
+
+[[center]]
+type = "clock"
+format = "%-l:%M %p"
+format_popup = "%m/%d/%Y %-r"
+
+[[end]]
+type = "music"
+
+[[end]]
+type = "volume"
+sink_slider_orientation = "horizontal"
+source_slider_orientation = "horizontal"
+icon_size = 25
+
+[[end]]
+type = "sys_info"
+format = [
+    # "C {cpu_percent: <1}%",
+    # "M {memory_percent: <1}%",
+    # "T {temp_c: <1}°C"
+    "  {cpu_percent: <1}%",
+    "  {memory_percent: <1}%",
+    "󰔏 {temp_c: <1}°C"
+]
+icon_size = 20
+
+[end.interval]
+cpu = 1
+memory = 1
+temp = 1

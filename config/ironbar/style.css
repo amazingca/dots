@@ -1,0 +1,128 @@
+:root {
+    --color-dark-primary: #1c1c1c;
+    --color-dark-secondary: #2d2d2d;
+    --color-white: #fff;
+    --color-active: #e7deff;
+    --color-urgent: #8f0a0a;
+
+    --margin-lg: 1em;
+    --margin-sm: 0.5em;
+}
+
+* {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background-image: none;
+    font-family: "Maple Mono NF";
+}
+
+scale > trough {
+    background-color: var(--color-dark-secondary);
+}
+
+scale > trough > highlight {
+    background-color: var(--color-active);
+    border-style: solid;
+    border-color: var(--color-active);
+    border-width: 0.2em;
+}
+
+scale > trough > slider {
+    background-color: var(--color-white);
+    border-radius: 1em;
+}
+
+switch > slider {
+    background-color: var(--color-white);
+}
+
+switch:checked {
+    background-color: var(--color-active);
+}
+
+switch:not(:checked) {
+    background-color: var(--color-dark-secondary);
+}
+
+popover, popover contents, calendar {
+    background-color: var(--color-dark-primary);
+}
+
+#bar, .background {
+    background-color: rgba(28, 28, 28, 0.5);
+}
+
+box, button, label {
+    background-color: #0000;
+    color: var(--color-white);
+}
+
+button {
+    border-radius: 1em;
+    padding-left: var(--margin-sm);
+    padding-right: var(--margin-sm);
+}
+
+button:hover, button:active {
+    background-color: var(--color-dark-secondary);
+}
+
+#end > * + * {
+    margin-left: var(--margin-lg);
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu > box {
+    /* background-color: white; */
+    padding-left: 4px; /* Really weird fix here since there's a min-width value somewhere I cannot change. */
+}
+
+.sysinfo > * + * {
+    /* margin-left: var(--margin-sm); */
+}
+
+.clock {
+    font-weight: bold;
+}
+
+.popup-clock .calendar-clock {
+    font-size: 1.5em;
+}
+
+.popup-clock .calendar .day-number {
+    border-radius: 1em;
+}
+
+.popup-clock .calendar .today {
+    background-color: var(--color-active);
+    color: var(--color-dark-primary);
+}
+
+.popup-clock .calendar .day-number:focus, .popup-clock .calendar .day-number:selected {
+    outline-color: var(--color-active);
+}
+
+.workspaces, .sysinfo {
+    margin-right: 0.5em;
+}
+
+.workspaces .item.visible {
+    /* box-shadow: inset 0 -1px var(--color-white); */
+}
+
+.workspaces .item.focused {
+    /* box-shadow: inset 0 -1px var(--color-active); */
+    background-color: var(--color-dark-secondary);
+}
+
+.workspaces .item.urgent {
+    background-color: var(--color-urgent);
+}
+
+button > .background, button contents {
+    border-radius: 1em;
+}

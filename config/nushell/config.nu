@@ -18,12 +18,8 @@
 #     config nu --doc | nu-highlight | less -R
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=cosmic
 
-def gp [] { sudo gpclient --fix-openssl connect gateway.colostate.edu }
-def virt [] { sudo /usr/bin/modprobe v4l2loopback exclusive_caps=1 card_label=OBS Virtual Camera }
-def c [] { cosmic-session }
-
-$env.config.buffer_editor = "helix"
 $env.EDITOR = "helix"
+$env.config.buffer_editor = $env.EDITOR
 
 $env.GPG_TTY = (tty)
 
@@ -36,3 +32,10 @@ $env.PROMPT_INDICATOR = "$ "
 $env.PROMPT_COMMAND = { $"[(pwd | path basename)@(sys host | get hostname)]" }
 
 $env.config.table.mode = "psql"
+
+$env.VPN_GATEWAY = ""
+
+def gp [] { sudo gpclient --fix-openssl connect $env.VPN_GATEWAY }
+def virt [] { sudo /usr/bin/modprobe v4l2loopback exclusive_caps=1 card_label=OBS Virtual Camera }
+def c [] { cosmic-session }
+def h [] { dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=hyprland; start-hyprland }
